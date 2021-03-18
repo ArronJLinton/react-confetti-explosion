@@ -62,5 +62,9 @@
     "pretty-quick": "^1.11.1",
     "ts-node": "^8.3.0",
     "typescript": "^3.4.0"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib"
   }
 }
