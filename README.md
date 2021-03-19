@@ -28,7 +28,7 @@ function App() {
 }
 ```
 
-Optional Props:
+## Optional Props:
 
 ```js
 {
@@ -48,11 +48,14 @@ To keep the library as little as possible much of the physics have been estimate
 
 ## Example Screenshots
 
-# Big explosion:
+### Big explosion:
 
-# Little explosion:
+![confetti-large-edit](https://user-images.githubusercontent.com/5460067/111782964-0c6bed80-8890-11eb-8a8b-0a4fdbc30cbd.gif)
 
 
+### Little explosion:
+
+![confetti-small-edit](https://user-images.githubusercontent.com/5460067/111782909-f8c08700-888f-11eb-9a90-4ef0931de730.gif)
 
 
 
