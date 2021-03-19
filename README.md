@@ -33,9 +33,9 @@ Optional Props:
 ```js
 {
   particleCount?: number; // total number of particles used
-  particleSize?: number; // size of particles in pixels
-  duration?: number; // full length of explosion in ms
-  colors?: string[]; // array of colors for particles
+  particleSize?: number; // size of particles in pixels (both squares and circles are generated)
+  duration?: number; // duration of explosion in ms
+  colors?: string[]; // array of any css-readable colors for particles
   force?: number; // 0-1 roughly the vertical force at which particles initially explode
   floorHeight?: number; // pixels the particles will vertically spread from initial explosion point
   floorWidth?: number; // pixels the particles will horizontally spread from initial explosion point
@@ -44,18 +44,13 @@ Optional Props:
 
 Although the duration of the explosion is controlled, it is up to the consumer how and when the `ConfettiExplosion` is rendered and positioned (and, hey, maybe even faded out?).
 
-To keep the library as little as possible much of the physics have been estimated, cheapened, and downright mutilated. There are certainly prop combinations that will not look realistic, due to the limitations of CSS animations. But there should be enough options to fit your needs.
+To keep the library as little as possible much of the physics have been estimated, cheapened, and downright mutilated. There are certainly prop combinations that will not look realistic, due to the limitations of CSS animations. But there should be enough options to fit most needs.
 
 ## Example Screenshots
 
 # Big explosion:
 
-![image](https://user-images.githubusercontent.com/5460067/111780919-6d92c180-888e-11eb-9ee7-78e12519f38c.png)
-
-
 # Little explosion:
-
-![image](https://user-images.githubusercontent.com/5460067/111780895-653a8680-888e-11eb-901b-b58bd692295f.png)
 
 
 
