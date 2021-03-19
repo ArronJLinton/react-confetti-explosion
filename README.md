@@ -30,19 +30,21 @@ function App() {
 
 ## Optional Props:
 
-```js
-{
-  particleCount?: number; // total number of particles used
-  particleSize?: number; // size of particles in pixels (both squares and circles are generated)
-  duration?: number; // duration of explosion in ms
-  colors?: string[]; // array of any css-readable colors for particles
-  force?: number; // 0-1 roughly the vertical force at which particles initially explode
-  floorHeight?: number; // pixels the particles will vertically spread from initial explosion point
-  floorWidth?: number; // pixels the particles will horizontally spread from initial explosion point
-}
-```
+| Name          | Type       | Default                                                       | Description                                                                                                                                   |
+|---------------|------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| particleCount | `number`   | 150                                                           | Total number of particles used. Generally try to stay under 400 for optimal performance.                                                      |
+| particleSize  | `number`   | 12                                                            | Size of particles in pixels. This means width for squares, diameter for circles. Note there is also a bit of randomness added to these.       |
+| duration      | `number`   | 3500                                                          | Duration of explosion in ms. This is the time it takes particles to travel from explosion point to the floor, as defined by `floorHeight`.    |
+| colors        | `string[]` | [<br>'#FFC700',<br>'#FF0000',<br>'#2E3191',<br>'#41BBC7'<br>] | An array of any css-readable colors, which are evenly distributed across the number of total particles.                                       |
+| force         | `number`   | 0.5                                                           | Between 0-1, roughly the vertical force at which particles initially explode. Straying too far away from 0.5 may start looking...interesting. |
+| floorHeight   | `number`   | 800                                                           | Pixel distance the particles will vertically spread from initial explosion point.                                                             |
+| floorWidth    | `number`   | 1600                                                          | Pixel distance the particles will horizontally spread from initial explosion point.                                                           |                                                    |
 
-Although the duration of the explosion is controlled, it is up to the consumer how and when the `ConfettiExplosion` is rendered and positioned (and, hey, maybe even faded out?).
+Although the duration of the explosion is controlled, it is up to the consumer how and when the `ConfettiExplosion` is rendered and positioned (and, hey, maybe even faded out?). 
+
+## Potential gotchas
+- Your container must be `overflow: visible` in order to allow elements to fully spread across area.
+- If your `floorHeight` is too small, particles may visibly land on the floor instead of disappearing off-screen.
 
 To keep the library as little as possible much of the physics have been estimated, cheapened, and downright mutilated. There are certainly prop combinations that will not look realistic, due to the limitations of CSS animations. But there should be enough options to fit most needs.
 
