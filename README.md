@@ -58,6 +58,10 @@ To keep the library as little as possible much of the physics have been estimate
 ![confetti-small-edit](https://user-images.githubusercontent.com/5460067/111782909-f8c08700-888f-11eb-9a90-4ef0931de730.gif)
 
 
+### Tiny explosion:
+
+![confetti-tiny](https://user-images.githubusercontent.com/5460067/111792596-c6685700-889a-11eb-8daf-7b234726041a.gif)
+
 
 ## Author
 

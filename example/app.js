@@ -51,6 +51,14 @@ const littleExplodeProps = {
   floorWidth: 1000
 }
 
+const tinyExplodeProps = {
+  force: 0.4,
+  duration: 2000,
+  particleCount: 30,
+  floorHeight: 500,
+  floorWidth: 300
+}
+
 function Button() {
   const [isExploding, setIsExploding] = React.useState(false);
   return (
@@ -62,7 +70,7 @@ function Button() {
       >
         {isExploding && (
           <div style={source}>
-            <ConfettiExplosion {...bigExplodeProps} />
+            <ConfettiExplosion {...tinyExplodeProps} />
           </div>
         )}
         Explode!
