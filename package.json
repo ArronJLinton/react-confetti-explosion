@@ -1,6 +1,6 @@
 {
   "name": "@reonomy/react-confetti-explosion",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight css-animation based confetti exploder for React",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",

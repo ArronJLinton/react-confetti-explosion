@@ -40,7 +40,7 @@ function App() {
 | floorHeight   | `number`   | 800                                                           | Pixel distance the particles will vertically spread from initial explosion point.                                                             |
 | floorWidth    | `number`   | 1600                                                          | Pixel distance the particles will horizontally spread from initial explosion point.                                                           |                                                    |
 
-Although the duration of the explosion is controlled, it is up to the consumer how and when the `ConfettiExplosion` is rendered and positioned (and, hey, maybe even faded out?). 
+Although the duration of the explosion is controlled, it is up to the consumer how and when the `ConfettiExplosion` is rendered and positioned (and, hey, maybe even faded out?).
 
 ## Potential gotchas
 - Your container must be `overflow: visible` in order to allow elements to fully spread across area.
@@ -51,17 +51,41 @@ To keep the library as little as possible much of the physics have been estimate
 ## Example Screenshots
 
 ### Big explosion
-
+```
+{
+  force: 0.6,
+  duration: 5000,
+  particleCount: 200,
+  floorHeight: 1600,
+  floorWidth: 1600
+}
+```
 ![confetti-large-edit](https://user-images.githubusercontent.com/5460067/111782964-0c6bed80-8890-11eb-8a8b-0a4fdbc30cbd.gif)
 
 
 ### Little explosion
-
+```
+{
+  force: 0.4,
+  duration: 3000,
+  particleCount: 60,
+  floorHeight: 1000,
+  floorWidth: 1000
+}
+```
 ![confetti-small-edit](https://user-images.githubusercontent.com/5460067/111782909-f8c08700-888f-11eb-9a90-4ef0931de730.gif)
 
 
 ### Tiny explosion
-
+```
+{
+  force: 0.4,
+  duration: 2000,
+  particleCount: 30,
+  floorHeight: 500,
+  floorWidth: 300
+}
+```
 ![confetti-tiny](https://user-images.githubusercontent.com/5460067/111792596-c6685700-889a-11eb-8daf-7b234726041a.gif)
 
 
